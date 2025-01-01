@@ -117,17 +117,17 @@ n_cores = 30
 #### sst_hadisst_monmean_1870-2019.nc, rain_eobs_daymean_1950-2020.nc, and t2m_eobs_daymean_1950-2020.nc under path_raw_data:
 path_raw_data = None
 ### Path to preprocessed data
-path_data = '../data/'
+path_data = '/content/FYP/hwai/data/'
 ### Path to metrics
-path_metrics = '../model_output/metrics/'
+path_metrics = '/content/FYP/hwai/model_output/metrics/'
 ### Path to best hyperparameters
-path_hyperparam = '../model_output/hyperparameters/'
+path_hyperparam = '/content/FYP/hwai/model_output/hyperparameters/'
 ### Path to time series
-path_time_series = '../model_output/time_series/'
+path_time_series = '/content/FYP/hwai/model_output/time_series/'
 ### Path to plots
-path_plots = '../model_output/plots/'
+path_plots = '/content/FYP/hwai/model_output/plots/'
 ### Path to feature importances and regression coefficients
-path_features = '../model_output/features/'
+path_features = '/content/FYP/hwai/model_output/features/'
 
 
 ## 1.8. Latitude-longitude boxes
