@@ -1,0 +1,19 @@
+[2025-01-01 11:15:48,244][src.utils.utils][INFO] - Disabling python warnings! <cfg.extras.ignore_warnings=True>
+[2025-01-01 11:15:48,244][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2025-01-01 11:15:48,249][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2025-01-01 11:15:48,249][src.utils.rich_utils][WARNING] - Field 'logger' not found in config. Skipping 'logger' config printing...
+[2025-01-01 11:15:48,376][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2025-01-01 11:15:48,452][__main__][INFO] - Instantiating model <src.models.time_module.TSModule>
+[2025-01-01 11:15:48,513][__main__][INFO] - Instantiating callbacks...
+[2025-01-01 11:15:48,513][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2025-01-01 11:15:48,516][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.EarlyStopping>
+[2025-01-01 11:15:48,517][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2025-01-01 11:15:48,518][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2025-01-01 11:15:48,518][__main__][INFO] - Instantiating loggers...
+[2025-01-01 11:15:48,519][src.utils.instantiators][WARNING] - No logger configs found! Skipping...
+[2025-01-01 11:15:48,519][__main__][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2025-01-01 11:15:48,564][__main__][INFO] - Starting training!
+[2025-01-01 11:17:30,217][__main__][INFO] - Starting testing!
+[2025-01-01 11:17:31,556][__main__][INFO] - Best ckpt path: /content/classification-clean/logs/UCR_Blink_train/runs/2025-01-01_11-15-48/checkpoints/epoch_031.ckpt
+[2025-01-01 11:17:31,557][src.utils.utils][INFO] - Output dir: /content/classification-clean/logs/UCR_Blink_train/runs/2025-01-01_11-15-48
+[2025-01-01 11:17:34,012][src.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
