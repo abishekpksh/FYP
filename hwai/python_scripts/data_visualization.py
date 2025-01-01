@@ -10,7 +10,8 @@ import xarray as xr
 # Import TIGRAMITE
 from tigramite import data_processing as prepro
 from tigramite.pcmci import PCMCI
-from tigramite.independence_tests import ParCorr
+#from tigramite.independence_tests import ParCorr , this doesnt work
+from tigramite.independence_tests.parcorr import ParCorr
 
 # Import own functions
 from preprocessing_part2 import select_season
