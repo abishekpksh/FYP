@@ -3,7 +3,7 @@ import torch
 import lightning.pytorch as pl
 from torchmetrics import MaxMetric, MeanMetric
 from torchmetrics.classification.accuracy import Accuracy
-import models.augmentation.augment_signal as T
+import src.models.augmentation.augment_signal as T
 
 import pandas as pd
 import numpy as np

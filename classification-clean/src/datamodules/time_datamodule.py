@@ -5,8 +5,8 @@ import pandas as pd
 from torch.utils.data import DataLoader
 import lightning as L
 
-from datamodules.components.transforms import Normalizer
-from datamodules.components.ts_dataset import TSDataset
+from src.datamodules.components.transforms import Normalizer
+from src.datamodules.components.ts_dataset import TSDataset
 
 import warnings
 warnings.filterwarnings("ignore")
