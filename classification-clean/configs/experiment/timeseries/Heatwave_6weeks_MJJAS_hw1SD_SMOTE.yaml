@@ -35,7 +35,7 @@ model:
   #   mlp_dim: 8
   #   nlayers: 2
   net:
-    dropout: 0.2 #changed from 0.0
+    dropout: 0.0 
     cell_array:
       - 64
       - 64
