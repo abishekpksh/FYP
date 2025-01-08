@@ -112,3 +112,22 @@
 [2025-01-08 14:17:38,947][__main__][INFO] - Best ckpt path: /content/FYP/classification-clean/logs/Heatwave_2weeks_MJJAS_hw1SD_SMOTE_Classification_train/runs/2025-01-08_14-03-10/checkpoints/epoch_043.ckpt
 [2025-01-08 14:17:38,949][src.utils.utils][INFO] - Output dir: /content/FYP/classification-clean/logs/Heatwave_2weeks_MJJAS_hw1SD_SMOTE_Classification_train/runs/2025-01-08_14-03-10
 [2025-01-08 14:17:39,922][src.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
+[2025-01-08 15:19:57,188][src.utils.utils][INFO] - Disabling python warnings! <cfg.extras.ignore_warnings=True>
+[2025-01-08 15:19:57,188][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2025-01-08 15:19:57,194][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2025-01-08 15:19:57,194][src.utils.rich_utils][WARNING] - Field 'logger' not found in config. Skipping 'logger' config printing...
+[2025-01-08 15:19:57,342][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2025-01-08 15:19:57,400][__main__][INFO] - Instantiating model <src.models.time_module.TSModule>
+[2025-01-08 15:19:57,454][__main__][INFO] - Instantiating callbacks...
+[2025-01-08 15:19:57,454][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2025-01-08 15:19:57,457][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.EarlyStopping>
+[2025-01-08 15:19:57,458][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2025-01-08 15:19:57,459][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2025-01-08 15:19:57,460][__main__][INFO] - Instantiating loggers...
+[2025-01-08 15:19:57,460][src.utils.instantiators][WARNING] - No logger configs found! Skipping...
+[2025-01-08 15:19:57,460][__main__][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2025-01-08 15:19:57,507][__main__][INFO] - Starting training!
+[2025-01-08 15:28:25,984][__main__][INFO] - Starting testing!
+[2025-01-08 15:28:33,031][__main__][INFO] - Best ckpt path: /content/FYP/classification-clean/logs/Heatwave_2weeks_MJJAS_hw1SD_SMOTE_Classification_train/runs/2025-01-08_15-19-57/checkpoints/epoch_042.ckpt
+[2025-01-08 15:28:33,033][src.utils.utils][INFO] - Output dir: /content/FYP/classification-clean/logs/Heatwave_2weeks_MJJAS_hw1SD_SMOTE_Classification_train/runs/2025-01-08_15-19-57
+[2025-01-08 15:28:34,662][src.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
