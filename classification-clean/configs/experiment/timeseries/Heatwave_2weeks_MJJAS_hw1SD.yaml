@@ -41,7 +41,7 @@ model:
       - 64
       - 64
       # - 64
-    kernel_size: 7 #change to 9 after this
+    kernel_size: 9 #changed from 7
 
 datamodule:
   data_dir: ${paths.data_dir}/Heatwave_2weeks_MJJAS_hw1SD

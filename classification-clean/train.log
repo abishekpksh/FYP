@@ -55,3 +55,60 @@
 [2025-01-07 16:26:30,113][__main__][INFO] - Best ckpt path: /content/FYP/classification-clean/logs/Heatwave_3weeks_Classification_train/runs/2025-01-07_15-59-56/checkpoints/epoch_000.ckpt
 [2025-01-07 16:26:30,115][src.utils.utils][INFO] - Output dir: /content/FYP/classification-clean/logs/Heatwave_3weeks_Classification_train/runs/2025-01-07_15-59-56
 [2025-01-07 16:26:31,690][src.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
+[2025-01-08 12:55:46,919][src.utils.utils][INFO] - Disabling python warnings! <cfg.extras.ignore_warnings=True>
+[2025-01-08 12:55:46,920][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2025-01-08 12:55:46,925][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2025-01-08 12:55:46,926][src.utils.rich_utils][WARNING] - Field 'logger' not found in config. Skipping 'logger' config printing...
+[2025-01-08 12:55:47,041][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2025-01-08 12:55:47,102][__main__][INFO] - Instantiating model <src.models.time_module.TSModule>
+[2025-01-08 12:55:47,155][__main__][INFO] - Instantiating callbacks...
+[2025-01-08 12:55:47,156][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2025-01-08 12:55:47,159][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.EarlyStopping>
+[2025-01-08 12:55:47,160][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2025-01-08 12:55:47,161][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2025-01-08 12:55:47,161][__main__][INFO] - Instantiating loggers...
+[2025-01-08 12:55:47,161][src.utils.instantiators][WARNING] - No logger configs found! Skipping...
+[2025-01-08 12:55:47,161][__main__][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2025-01-08 12:55:47,206][__main__][INFO] - Starting training!
+[2025-01-08 13:03:34,986][__main__][INFO] - Starting testing!
+[2025-01-08 13:03:42,631][__main__][INFO] - Best ckpt path: /content/FYP/classification-clean/logs/Heatwave_2weeks_MJJAS_hw1SD_Classification_train/runs/2025-01-08_12-55-46/checkpoints/epoch_000.ckpt
+[2025-01-08 13:03:42,633][src.utils.utils][INFO] - Output dir: /content/FYP/classification-clean/logs/Heatwave_2weeks_MJJAS_hw1SD_Classification_train/runs/2025-01-08_12-55-46
+[2025-01-08 13:03:44,354][src.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
+[2025-01-08 13:16:52,956][src.utils.utils][INFO] - Disabling python warnings! <cfg.extras.ignore_warnings=True>
+[2025-01-08 13:16:52,956][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2025-01-08 13:16:52,962][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2025-01-08 13:16:52,962][src.utils.rich_utils][WARNING] - Field 'logger' not found in config. Skipping 'logger' config printing...
+[2025-01-08 13:16:53,096][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2025-01-08 13:16:53,126][__main__][INFO] - Instantiating model <src.models.time_module.TSModule>
+[2025-01-08 13:16:53,144][__main__][INFO] - Instantiating callbacks...
+[2025-01-08 13:16:53,144][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2025-01-08 13:16:53,147][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.EarlyStopping>
+[2025-01-08 13:16:53,149][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2025-01-08 13:16:53,149][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2025-01-08 13:16:53,150][__main__][INFO] - Instantiating loggers...
+[2025-01-08 13:16:53,150][src.utils.instantiators][WARNING] - No logger configs found! Skipping...
+[2025-01-08 13:16:53,150][__main__][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2025-01-08 13:16:53,201][__main__][INFO] - Starting training!
+[2025-01-08 13:24:59,270][__main__][INFO] - Starting testing!
+[2025-01-08 13:25:07,516][__main__][INFO] - Best ckpt path: /content/FYP/classification-clean/logs/Heatwave_2weeks_MJJAS_hw1SD_Classification_train/runs/2025-01-08_13-16-52/checkpoints/epoch_000.ckpt
+[2025-01-08 13:25:07,518][src.utils.utils][INFO] - Output dir: /content/FYP/classification-clean/logs/Heatwave_2weeks_MJJAS_hw1SD_Classification_train/runs/2025-01-08_13-16-52
+[2025-01-08 13:25:08,271][src.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
+[2025-01-08 14:03:11,120][src.utils.utils][INFO] - Disabling python warnings! <cfg.extras.ignore_warnings=True>
+[2025-01-08 14:03:11,120][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2025-01-08 14:03:11,133][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2025-01-08 14:03:11,134][src.utils.rich_utils][WARNING] - Field 'logger' not found in config. Skipping 'logger' config printing...
+[2025-01-08 14:03:11,310][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2025-01-08 14:03:11,375][__main__][INFO] - Instantiating model <src.models.time_module.TSModule>
+[2025-01-08 14:03:11,411][__main__][INFO] - Instantiating callbacks...
+[2025-01-08 14:03:11,412][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2025-01-08 14:03:11,417][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.EarlyStopping>
+[2025-01-08 14:03:11,419][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2025-01-08 14:03:11,420][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2025-01-08 14:03:11,421][__main__][INFO] - Instantiating loggers...
+[2025-01-08 14:03:11,421][src.utils.instantiators][WARNING] - No logger configs found! Skipping...
+[2025-01-08 14:03:11,422][__main__][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2025-01-08 14:03:11,494][__main__][INFO] - Starting training!
+[2025-01-08 14:17:23,834][__main__][INFO] - Starting testing!
+[2025-01-08 14:17:38,947][__main__][INFO] - Best ckpt path: /content/FYP/classification-clean/logs/Heatwave_2weeks_MJJAS_hw1SD_SMOTE_Classification_train/runs/2025-01-08_14-03-10/checkpoints/epoch_043.ckpt
+[2025-01-08 14:17:38,949][src.utils.utils][INFO] - Output dir: /content/FYP/classification-clean/logs/Heatwave_2weeks_MJJAS_hw1SD_SMOTE_Classification_train/runs/2025-01-08_14-03-10
+[2025-01-08 14:17:39,922][src.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...
