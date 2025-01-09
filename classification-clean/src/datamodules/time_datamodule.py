@@ -51,10 +51,10 @@ class TimeDataModule(L.LightningDataModule):
 
             # Normalize the data
             normalizer = Normalizer(norm_type="standardization")
-            normalizer.fit(train_data)
+            normalizer.fit(train_data) # The fit method only computes mean of each feature and sd of each feature for the training set and normalises each feature with that.
 
-            train_data = normalizer.transform(train_data).transpose(0, 2, 1)
-            val_data = normalizer.transform(val_data).transpose(0, 2, 1)
+            train_data = normalizer.transform(train_data).transpose(0, 2, 1) # The transform method applies the saved mean of each feature and sd of each feature (found from training set) and normalises the val and test set.
+            val_data = normalizer.transform(val_data).transpose(0, 2, 1) # Also need to transpose as the model expects the input as (num_samples, num_features, timesteps) and not (num_samples, timesteps, num_features)
             test_data = normalizer.transform(test_data).transpose(0, 2, 1)
 
             self.train_dataset = TSDataset(train_data, train_target)
