@@ -1,0 +1,56 @@
+task_name: SMOTE_interpret
+tags:
+- eval_interpretability_SMOTE
+- BiLSTM
+ckpt_path: /content/interpretability/logs/BiLSTM_MJJAS_SMOTE/final_model.ckpt
+datamodule:
+  _target_: src.datamodules.time_datamodule.TimeDataModule
+  data_dir: ${paths.data_dir}/BiLSTM_MJJAS_SMOTE
+  save_dir: ${paths.output_dir}/datamodule
+  train_batch_size: 32
+  val_batch_size: 1
+model:
+  _target_: src.models.time_module.TSModule
+  save_dir: ${paths.output_dir}/datamodule
+  optimizer:
+    _target_: torch.optim.Adam
+    _partial_: true
+    lr: 0.001
+    weight_decay: 0
+  scheduler:
+    _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+    _partial_: true
+    mode: min
+    factor: 0.1
+    patience: 50
+  net:
+    _target_: src.models.components.bilstm_model.BiLstmModel
+    input_size: 0
+    output_size: 0
+    act_fn_name: relu
+    cell_array:
+    - 64
+    - 64
+    - 64
+    - 64
+    dropout: 0
+trainer:
+  _target_: lightning.pytorch.trainer.Trainer
+  default_root_dir: ${paths.output_dir}
+  min_epochs: 1
+  max_epochs: 10
+  accelerator: gpu
+  devices: 1
+  check_val_every_n_epoch: 1
+  log_every_n_steps: 20
+  deterministic: false
+paths:
+  root_dir: ${oc.env:PROJECT_ROOT}
+  data_dir: ${paths.root_dir}/data/
+  log_dir: ${paths.root_dir}/logs/
+  output_dir: ${hydra:runtime.output_dir}
+  work_dir: ${hydra:runtime.cwd}
+extras:
+  ignore_warnings: true
+  enforce_tags: true
+  print_config: true

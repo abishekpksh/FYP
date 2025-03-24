@@ -1,0 +1,27 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - datamodule: ts_datamodule.yaml # choose datamodule with `test_dataloader()` for evaluation
+  - model: bilstm.yaml
+  - logger: null
+  - trainer: default.yaml
+  - paths: default.yaml
+  - extras: default.yaml
+  - hydra: default.yaml
+
+task_name: "SMOTE_interpret"
+
+tags: ["eval_interpretability_SMOTE", "BiLSTM"]
+
+# passing checkpoint path is necessary for evaluation interpretability results
+
+## UCR dataset
+# Blink 
+ckpt_path: /content/interpretability/logs/BiLSTM_MJJAS_SMOTE/runs/2025-03-24_07-34-11/checkpoints/epoch_034.ckpt
+# ckpt_path: /workspace/TimeSeries-Interpretability-Robustness/logs_saved/StatisticalResults/TrainedModels/Blink_train/runs/bilstm/checkpoints/epoch_077.ckpt # BiLSTM + Blink
+# ckpt_path: /workspace/TimeSeries-Interpretability-Robustness/logs_saved/StatisticalResults/TrainedModels/Blink_train/runs/trans/checkpoints/epoch_002.ckpt # Transformer + Blink
+
+
+# seed for random number generators in pytorch, numpy and python.random
+# seed: 1234

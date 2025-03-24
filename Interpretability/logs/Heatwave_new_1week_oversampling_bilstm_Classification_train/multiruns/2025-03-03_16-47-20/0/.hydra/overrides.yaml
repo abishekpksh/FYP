@@ -1,0 +1,7 @@
+- model.optimizer.lr=0.01923279309285134
+- model.optimizer.weight_decay=0.002
+- datamodule.train_batch_size=64
+- model.net.cell_array=[128,128,128]
+- model.net.dropout=0
+- hparams_search=optuna
+- experiment=timeseries/Heatwave_new_1week_oversampling_bilstm.yaml

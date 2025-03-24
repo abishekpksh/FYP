@@ -1,0 +1,8 @@
+name: optuna
+best_params:
+  model.optimizer.lr: 0.07730537949907618
+  model.optimizer.weight_decay: 0
+  datamodule.train_batch_size: 128
+  model.net.cell_array: '[32,32,32]'
+  model.net.dropout: 0.2
+best_value: 0.888731062412262
