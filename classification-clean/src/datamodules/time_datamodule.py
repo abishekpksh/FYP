@@ -48,6 +48,8 @@ class TimeDataModule(L.LightningDataModule):
             val_target = np.load(os.path.join(self.data_dir, "val_targets.npy"))
             test_data = np.load(os.path.join(self.data_dir, "test_signals.npy"))
             test_target = np.load(os.path.join(self.data_dir, "test_targets.npy"))
+            train_data = np.concatenate((train_data, test_data[:round(0.60*len(test_data))]))
+            train_target = np.concatenate((train_target, test_target[:round(0.60*len(test_target))]))
 
             # Normalize the data
             normalizer = Normalizer(norm_type="standardization")
