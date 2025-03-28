@@ -10,9 +10,9 @@ defaults:
   - extras: default.yaml
   - hydra: default.yaml
 
-task_name: "SMOTE_interpret"
+task_name: "SMOTE_MIXUP_Interpret"
 
-tags: ["eval_interpretability_SMOTE", "BiLSTM"]
+tags: ["eval_interpretability_SMOTE_MIXUP", "BiLSTM"]
 
 # passing checkpoint path is necessary for evaluation interpretability results
 
